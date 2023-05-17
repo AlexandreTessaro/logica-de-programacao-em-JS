@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function jumbLine() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function show(phrase){
+		document.write(phrase);
+		jumbLine();
+	}
+
+	var limit = parseInt(prompt("Enter the deadline: "));
+	var cupYear = 1930;
+
+	while(cupYear <= limit){
+		show("There was a cup in " + cupYear);
+		cupYear = cupYear + 4;
+	}
+
+	show("FIM");
+
+
+</script>

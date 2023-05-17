@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function jumbLine() {
+		document.write("<br>");
+	}
+
+	function show(phrase){
+		document.write(phrase);
+		jumbLine();
+	}
+
+	for(var line = 1; line <= 3; line++){
+		for(var column = 1; column <= 3; column++){
+			document.write("*");
+		}
+		jumbLine();
+	}
+
+</script>

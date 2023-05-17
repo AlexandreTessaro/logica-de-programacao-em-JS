@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function jumbLine() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function show(phrase){
+		document.write(phrase);
+		jumbLine();
+	}
+
+	var winners = parseInt(prompt("Amount of wins: "));
+	var draw    = parseInt(prompt("Amount of draw: "));
+
+	var points  = (winners * 3) + draw;
+
+	show("Your team's points are: " + points);
+
+	if(points > 28){
+		show("Your team is better than last year");
+	}
+
+	if(points < 28){
+		show("Your team is worse than last year");
+	}
+
+	if(points == 28){
+		show("Your team is same than last year");
+	}
+
+	show("End");
+
+</script>

@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function jumbLine() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function show(phrase){
+		document.write(phrase);
+		jumbLine();
+	}
+
+	var thoughtNumber = Math.round(Math.random() * 10);
+	var attempts = 1;
+	
+	while(attempts <= 3){
+		var attempt = parseInt(prompt("Enter your attempt"));
+
+		if(attempt == thoughtNumber){
+			show("You're right");
+			break;		
+		} else{
+			show("You made a mistake");
+		}
+		attempts++;
+	}
+	show("END");
+
+</script>

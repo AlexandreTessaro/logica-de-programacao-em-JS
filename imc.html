@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function jumbLine() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function show(phrase){
+		document.write(phrase);
+		jumbLine();
+	}
+
+	function calculateBmi(height, weight) {
+
+   		return weight / (height * height);
+	}
+
+	var name = prompt("Inform your name: ");
+	var reportedHeight = prompt(name + " inform your height: ");
+	var reportedWeight = prompt(name + " inform your weight: ");
+
+	var bmi = calculateBmi(reportedHeight, reportedWeight);
+
+	show(name + ", your calculated BMI is " + bmi);
+
+	if(bmi < 18.5){
+		show("You are below the recommended");
+	}
+	if(bmi > 35){
+		show("You are above recommended");
+	}
+	if(bmi >= 18.5 && bmi <= 35){
+		show("Your bmi is excellents");
+	}
+
+</script>

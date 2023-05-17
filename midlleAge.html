@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function jumbLine() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function show(phrase){
+		document.write(phrase);
+		jumbLine();
+	}
+
+	var totalFamily = parseInt(prompt("Number of family members: "));
+	var number = 1;
+	var totalAges = 0;
+
+	while(number <= totalFamily){
+		var age = parseInt(prompt("Inform the age of the relative: "));
+		totalAges = totalAges + age;
+		number++;
+	}
+	var averageAge = totalAges / totalFamily;
+	
+	show("The average age of the family is " + averageAge);
+	show("END");
+
+</script>
